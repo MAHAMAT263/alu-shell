@@ -1,3 +1,2 @@
 #!/bin/bash
-acrostic_text="An acrostic is a poem\n(or other form of writing)\nin which the first letter\n(or syllable, or word)\nof each line (or paragraph,\nor other recurring feature in the text)\nspells out a word, message\nor the alphabet. The word comes\nfrom the French acrostiche\nfrom post-classical Latin acrostichis).\nAs a form of constrained writing,\nan acrostic can be used\nas a mnemonic device\nto aid memory retrieval."; decoded_text=$(echo "$acrostic_text" | cut -c1 | tr -d '\n'); echo "$decoded_text"
-
+cut -c 1 | tr -d '\n'
